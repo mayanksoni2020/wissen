@@ -1,0 +1,162 @@
+/* <!--Navigation-Bar Starts--> */
+#top
+{
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+#website-name{
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+#myNavbar{
+    font-size: 18px;
+    font-family: 'Cabin', sans-serif;
+}
+/* <!--Navigation-Bar Ends--> */
+
+/* <!--Main Container Starts--> */
+.main-container{
+    height: 80vh;
+    background-color: black;
+}
+#container-one{
+    height: 80vh;
+    margin-left: 20px;
+}
+#container-two{
+    height: 80vh;
+    background-image: url('../Project/Images/container1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container-quote{
+    border: 10px solid white;
+    color: white;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    margin: 40% 10%;
+    padding: 10px 30px;
+}
+/* <!--Main Container Ends--> */
+
+/* <!--Our Services Ends--> */
+#services-main{
+    height: 35vh;
+    margin: 0px;
+}
+#services-one{
+    height: 35vh;
+    background-color: #1a1a3f;
+}
+#services-two{
+    height: 35vh;
+    background-color: #1a1a3f;
+}
+.services-logo{
+    font-size: 16rem;
+    color: #fff;
+    margin-top: 10%;
+    text-align: center;
+}
+.services-desc{
+    color: #fff;
+    margin-top: 8%;
+    font-size: 40px;
+    font-family: 'Cabin', sans-serif;
+}
+.services-desc h1{
+    letter-spacing: 2px;
+}
+.services-desc h4{
+    color: #C3C3F0;
+    font-family: 'Noticia Text', serif;
+    letter-spacing: 1px;
+}
+#services-btn{
+    background-color: green;
+    color: black;
+    border: none;
+}
+/* <!--Our Services Ends--> */
+
+/* <!--Our Expertise Ends--> */
+#expertise-one{
+    margin: 3% 0%;
+}
+.expertise-head{
+    text-align: center;
+}
+.expertise-head h2{
+    color: #1d2738;
+    font-family: Khula,sans-serif;
+    font-size: 34px;
+    font-weight: bolder;
+} 
+.expertise-head h6{
+    font-size: 18px;
+    color: #676767;
+    font-family: 'Noticia Text', serif;
+}
+#expertise-two{
+    margin-bottom: 5%;
+}
+#expertise-logo{
+    text-align: center;
+    font-size: 60px;
+    color: #000;
+    margin-bottom: 20px;
+}
+#expertise-desc{
+    text-align: center;
+}
+#expertise-heading{
+    color: #1d2738;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-family: Khula,sans-serif;
+}
+#expertise-subheading{
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #676767;
+    font-family: 'Noticia Text', serif;
+}
+/* <!--Our Expertise Ends--> */
+
+/* <!--Registration Steps Starts--> */
+#single-container{
+    height: 70vh;
+    margin: 2% 0%;
+}
+#registration-head h1{
+    font-size: 42px;
+    font-family: Khula,sans-serif;
+    color: #1d2738;
+    text-align: center;
+    margin-top: 5%;
+}
+#steps-name h1{
+    font-size: 48px;
+    font-family: 'Cabin', sans-serif;
+    color: #3cb371;
+}
+#steps-desc{
+    font-size: 28px;
+    color: #212529;
+    font-family: 'Cabin', sans-serif;
+    margin-top: 5%;
+}
+#registration-left{
+    height: 70vh;
+    padding: 3% 5%;
+}
+#registration-right{
+    height: 70vh;
+}
+#registration-right img{
+    width: 80%;
+}
+/* <!--Registration Steps Starts--> */
