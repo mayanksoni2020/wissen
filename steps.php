@@ -1,5 +1,5 @@
 <!-- Registration Steps Starts -->
-<div class="registration-main" style="background-color: red;">
+<div class="registration-main">
       <div class="col-md-12 col-sm-12" id="registration-head">
         <h1>Four Simple Steps to Join Us</h1>
       </div>
@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="col-md-6 col-sm-6" id="registration-right"><br><br><br><br>
-          <img src="../../Project/Images/getnotified.jpg" alt="Image"/>
+          <img src="../../Wissen/Images/getnotified.jpg" alt="Image"/>
         </div>
       </div>
       <!-- Step One Ends-->
@@ -27,7 +27,7 @@
       <!-- Step Two Starts-->
       <div class="col-md-12 col-sm-12" id="single-container">
       <div class="col-md-6 col-sm-6" id="registration-right"><br><br><br>
-      <img src="../../Project/Images/reg.jpg" alt="Image"/>
+      <img src="../../Wissen/Images/reg.jpg" alt="Image"/>
       </div>
       <div class="col-md-6 col-sm-6" id="registration-left">
           <div class="col-md-12 col-sm-12" id="steps-name">
@@ -59,7 +59,7 @@
           </div>
         </div>
         <div class="col-md-6 col-sm-6" id="registration-right"><br><br><br>
-        <img src="../../Project/Images/inter.jpg" alt="Image"/>
+        <img src="../../Wissen/Images/inter.jpg" alt="Image"/>
         </div>
       </div>
       <!-- Step Three Ends-->
@@ -67,7 +67,7 @@
       <!-- Step Four Starts-->
       <div class="col-md-12 col-sm-12" id="single-container">
       <div class="col-md-6 col-sm-6" id="registration-right"><br><br><br><br>
-      <img src="../../Project/Images/result.jpg" alt="Image"/>
+      <img src="../../Wissen/Images/result.jpg" alt="Image"/>
       </div>
       <div class="col-md-6 col-sm-6" id="registration-left">
           <div class="col-md-12 col-sm-12" id="steps-name">
@@ -75,7 +75,7 @@
           </div>
           <div class="col-md-12 col-sm-12">
             <p id="steps-desc">
-            You all done from your side.After analyzing each candidates performance our
+            You all done from your side. After analyzing each candidates performance our
              recruitment team prepare the result of the selected student. 
              The results are declared on facebook page.
             </p>
