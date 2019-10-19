@@ -1,0 +1,251 @@
+/* <!--Navigation-Bar Starts--> */
+#top
+{
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    background-color: #000000;
+}
+#website-name{
+    font-size: 20px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+#myNavbar{
+    font-size: 18px;
+    font-family: 'Cabin', sans-serif;
+}
+#myNavbar ul li :hover{
+    border-bottom: 1px solid yellow;
+}
+/* <!--Navigation-Bar Ends--> */
+
+/* <!--Main Container Starts--> */
+.main-container{
+    height: 75vh;
+    background: -webkit-gradient(linear,left top,left bottom, from(rgba(35,66,151,.6)), to(rgba(209,13,13,.692))), url('../Wissen/Images/background-cover.jpg');
+    background: linear-gradient(180deg,rgba(35,66,151,.6),rgba(209,13,13,.692)), url('../Wissen/Images/background-cover3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    margin-top: 6vh;
+}
+#container-one{
+    height: 75vh;
+}
+#container-two{
+    height: 75vh;
+    padding: 50px; 
+}
+.container-quote{
+    border: 10px solid black;
+    color: white;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    margin: 20%;
+    padding: 10px 30px;
+    background-color: black;
+}
+/* <!--Main Container Ends--> */
+
+/* <!--Our Services Ends--> */
+/* .services-main{
+    height: 35vh;
+    margin: 0px;
+    background-color: #1a1a3f;
+} */
+#services-one{
+    height: 40vh;
+    background-color: #1a1a3f;
+}
+#services-two{
+    height: 40vh;
+    background-color: #1a1a3f;
+}
+.services-logo{
+    font-size: 16rem;
+    color: #fff;
+    margin-top: 10%;
+    text-align: center;
+}
+.services-desc{
+    color: #fff;
+    margin-top: 8%;
+    font-size: 40px;
+    font-family: 'Cabin', sans-serif;
+}
+.services-desc h1{
+    letter-spacing: 2px;
+}
+.services-desc h4{
+    color: #C3C3F0;
+    font-family: 'Noticia Text', serif;
+    letter-spacing: 1px;
+}
+#services-btn{
+    background-color: green;
+    color: black;
+    border: none;
+}
+/* <!--Our Services Ends--> */
+
+/* <!--Our Expertise Ends--> */
+#expertise-one{
+    margin: 3% 0%;
+}
+.expertise-head{
+    text-align: center;
+}
+.expertise-head h2{
+    color: #1d2738;
+    font-family: Khula,sans-serif;
+    font-size: 34px;
+    font-weight: bolder;
+} 
+.expertise-head h6{
+    font-size: 18px;
+    color: #676767;
+    font-family: 'Noticia Text', serif;
+}
+#expertise-two{
+    margin-bottom: 5%;
+}
+#expertise-logo{
+    text-align: center;
+    font-size: 60px;
+    color: #000;
+    margin-bottom: 20px;
+}
+#expertise-desc{
+    text-align: center;
+}
+#expertise-heading{
+    color: #1d2738;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-family: Khula,sans-serif;
+}
+#expertise-subheading{
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #676767;
+    font-family: 'Noticia Text', serif;
+}
+/* <!--Our Expertise Ends--> */
+
+/* <!--Registration Steps Starts--> */
+#single-container{
+    height: 70vh;
+    margin: 2% 0%;
+}
+#registration-head h1{
+    font-size: 42px;
+    font-family: Khula,sans-serif;
+    color: #1d2738;
+    text-align: center;
+    margin-top: 5%;
+}
+#steps-name h1{
+    font-size: 48px;
+    font-family: 'Cabin', sans-serif;
+    color: #3cb371;
+}
+#steps-desc{
+    font-size: 26px;
+    color: #212529;
+    font-family: 'Cabin', sans-serif;
+    margin-top: 5%;
+}
+#registration-left{
+    height: 70vh;
+    padding: 3% 5%;
+}
+#registration-right{
+    height: 70vh;
+}
+#registration-right img{
+    width: 80%;
+}
+/* <!--Registration Steps Starts--> */
+
+/* Counter Starts */
+#counter-container{
+    background-color: #000000;
+    padding: 0px;
+}
+#containers{
+    text-align: center;
+    margin: 5% 0%;
+}
+/* Counter Ends */
+
+/* Feedback Starts */
+.feedback-desc{
+    margin: 25% 10%;
+    border-right: 5px solid brown;
+}
+.feedback-desc h1{
+    line-height: 1.4;
+    font-size: 58px;
+    color: #212529;
+    font-family: Khula,sans-serif;
+}
+#myCarousel{
+    margin: 25% 5%;
+}
+/* Feedback Ends */
+
+/* Footer Starts */
+#footer-info h3{
+    color: rgb(196, 235, 21);
+    font-family: Khula,sans-serif;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+#footer-info{
+    color: #888;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+#footer-link h4{
+    color: rgb(196, 235, 21);
+    font-family: Khula,sans-serif;
+    letter-spacing: 1px;
+}
+#footer-links{
+    color: #888;
+}
+#footer-links li{
+    list-style-type: none;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+/* Footer Ends */
+
+/* Last Footer Starts */
+#footer-icons{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+#footer-ask{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+#button-one{
+    border: 1px solid #888;
+    color: #888;
+    background-color: #000;
+    padding: 5px 12px;
+    border-radius: 500px;
+    font-size: 1.5rem;
+    outline: none;
+}
+#button-one:hover{
+    border: 1px solid #000;
+    background-color: rgb(110, 80, 219);
+    color: white;
+}
+/* Last Footer Ends */

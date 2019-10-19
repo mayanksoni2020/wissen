@@ -15,6 +15,7 @@
       <li class="active"><a href="#"><span class="glyphicon glyphicon-home" id="span-hover"></span> Home</a></li>
       <li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> About Us</a></li>
       <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Contact Us</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-calendar"></span> Events</a></li>
       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li style="background-color: #3BABFD;"><a href="#" style="color: white"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>

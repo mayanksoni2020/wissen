@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Project CSS File Link Starts -->
   <link rel="stylesheet" href="index.css" type="text/css"/>
-  <link rel="stylesheet" href="css2.css" type="text/css"/>
+  <link rel="stylesheet" href="css3.css" type="text/css"/>
   <!-- Project CSS File Link Ends -->
 
   <!-- Google Font Style Link Starts -->
@@ -26,16 +26,6 @@
   <!-- Header Ends -->
 
   <!-- Container Starts -->
-    <!-- <div class="main-container">
-      <div class="col-md-4 col-sm-5" id="container-one">
-        <div class="container-quote">
-          <h1 style="line-height: 1.6; letter-spacing: 2px;">Better Education Develops the Nation !!!</h1>
-        </div>
-      </div>
-      <div class="col-md-7 col-sm-6" id="container-two">
-        <img src="../../Wissen/Images/project-management.svg" alt="Image" style="width: 100%; height: 80%;">
-      </div>
-    </div> -->
     <?php include('container.php'); ?>
   <!-- Container Ends -->
 
@@ -58,5 +48,9 @@
   <!-- Feedback Starts -->
     <?php include('feedback.php'); ?>
   <!-- Feedback Ends -->
+
+  <!-- Footer Starts -->
+    <?php include('footer.php'); ?>
+  <!-- Footer Ends -->
 </body>
 </html>
