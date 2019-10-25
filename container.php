@@ -6,7 +6,7 @@
         </div>
       </div>
       <div class="col-md-6 col-sm-6" id="container-two">
-        <img src="../../Wissen/Images/project-management.svg" alt="Image" style="width: 100%; height: 100%;">
+        <img src="./Images/project-management.svg" alt="Image" style="width: 100%; height: 100%;">
       </div>
 </div>
 </div>

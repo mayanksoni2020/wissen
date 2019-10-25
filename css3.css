@@ -41,12 +41,13 @@
     padding: 50px; 
 }
 .container-quote{
-    border: 10px solid black;
-    color: white;
+    border: 10px solid rgb(38, 157, 248);;
+    color: black;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     margin: 20%;
     padding: 10px 30px;
-    background-color: black;
+    background-color: rgb(38, 157, 248);
+    font-family: 'Poppins', sans-serif;
 }
 /* <!--Main Container Ends--> */
 
@@ -283,7 +284,7 @@
     border-radius: 5px;
     font-size: 1.5rem;
 }
-form input, textarea, button{
+form input, textarea{
     border-radius: 2px;
     width: 100%;
     padding: 5px 10px;
@@ -309,3 +310,126 @@ form input, textarea, button{
 /* Contact Ways Ends */
 
 /* Contact Us Page CSS Ends */
+
+
+/* Events Page CSS Starts */
+
+/* Event Container Starts */
+header{
+    background: url('./Images/header-cover.jpg');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+header::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: url('./Images/wave-bottom.svg');
+    height: 275px;
+}
+.header-content{
+    z-index: 1;
+    position: relative;
+    font-family: tahoma;
+}
+.header-content h1{
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+}
+.header-content p{
+    font-size: 20px;
+    margin: 20px 0 25px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.theme-btn{
+    border-radius: 50px;
+    background: white;
+    padding: 15px 30px;
+    min-width: 170px;
+    border: 2px solid white;
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 13px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 12px;
+    transition: all 0.2s ease-in;
+    font-weight: bold;
+}
+.theme-btn:hover{
+    text-decoration: none;
+    background-color: black;;
+    color: white;
+    border: 2px solid black;
+}
+
+/* Event Container Ends */
+
+/* Counter Starts */
+.main_counter{
+    display: flex;
+    align-items: center;
+    margin: 0px 10%;
+    position: absolute;
+    bottom: 50px;
+    z-index:900;
+    font-family: 'Poppins', sans-serif;
+}
+.counter
+{
+    width:160px;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.25);
+    font-size: 3rem;
+    border-radius: 10px;
+    color:white;
+}
+.counter:hover{
+    color: black;
+}
+/* Counter Ends */
+
+/* All Events Starts */
+.events-container{
+    background: linear-gradient(to top left, #2986a5,#0d6697,#00879a,#00776b);
+    height: 200vh;
+    padding: 50px 80px;
+    margin-top: 50px;
+}
+.event-header{
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+#events-main{
+    padding: 10px;
+    color: #133E54;
+    background-color: white;
+    border-radius: 5px;
+    margin: 50px;
+}
+.event-more p{
+    display: inline-block;
+}
+/* All Events Ends */
+
+/* Our Sponsors Starts */
+.sponsors-container{
+    padding: 50px;
+    height: 20vh;
+}
+/* Our Sponsors Ends */
+
+/* Events Page CSS Ends */

@@ -67,7 +67,7 @@
         <div class="col-md-12 col-sm-12" id="contact-desc">
           <h3>CALL US</h3>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          <p style="color: orangered;"><b>(+91) 8787292169</b></p>
+          <p style="color: orangered;"><b>(+91)-8787292169</b></p>
         </div>
         </div>
         <div class="col-md-4 col-sm-4">

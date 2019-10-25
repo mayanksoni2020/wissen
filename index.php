@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Project CSS File Link Starts -->
   <link rel="stylesheet" href="index.css" type="text/css"/>
-  <link rel="stylesheet" href="css3.css" type="text/css"/>
+  <link rel="stylesheet" href="css2.css" type="text/css"/>
   <!-- Project CSS File Link Ends -->
 
   <!-- Google Font Style Link Starts -->
   <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noticia+Text&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Khula:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
   <!-- Project CSS File Link Ends -->
   
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
