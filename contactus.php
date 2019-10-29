@@ -31,17 +31,47 @@
       </div>
       <div class="col-md-6 col-sm-6" id="contact-two">
         <!-- <img src="../../Wissen/Images/contact-us.svg" alt="Image" style="width: 100%; height: 100%;"> -->
-        <form id="contact-form">
+
+        <form action="contactus.php" method="post" id="contact-form">
           <p>First Name</p>
-          <input type="text" placeholder="Enter First Name" name="fname"/><br><br>
+          <input type="text" placeholder="Enter First Name" name="firstname" required="required"/><br><br>
           <p>Last Name</p>
-          <input type="text" placeholder="Enter Last Name" name="lname"/><br><br>
+          <input type="text" placeholder="Enter Last Name" name="lastname" required="required"/><br><br>
           <p>Email Address</p>
-          <input type="text" placeholder="Enter Email" name="email"/><br><br>
+          <input type="email" placeholder="Enter Email" name="email" required="required"/><br><br>
           <p>Comment/Question</p>
-          <textarea type="text" placeholder="Your Words" name="words"></textarea><br><br>
-          <button type="button" class="btn btn-warning" style="font-size: 1.6rem; letter-spacing: 1px; color: black; width: 100%;"><b>Submit</b></button>
+          <textarea type="text" placeholder="Your Words" name="comments" required="required" style="color: black;"></textarea><br><br>
+          <!-- <button type="button" class="btn btn-warning" name="submit" style="font-size: 1.6rem; letter-spacing: 1px; color: black; width: 100%;"><b>Submit</b></button> -->
+          <input id="btn" type="submit" name="submit" value="SUBMIT" style="font-size: 1.6rem; letter-spacing: 1px; background-color: #FFAE42; font-weight: bold;"/>
         </form>
+
+<!-- Form Connection Starts -->
+<?php
+if(isset($_POST['submit'])){
+$fname = $_POST['firstname'];
+$lname = $_POST['lastname'];
+$email = $_POST['email'];
+$comments = $_POST['comments'];
+
+$cn = mysqli_connect('localhost', 'root', '', 'wissen');
+
+$query = "INSERT INTO `ContactUs`(`FirstName`, `LastName`, `Email`, `Comments`) VALUES ('$fname', '$lname', '$email', '$comments')";
+
+$run = mysqli_query($cn, $query);
+
+}
+?>
+<script>
+        btn.addEventListener("click",alertMessage)
+        function alertMessage(){
+            alert("We care about you, will contact shortly")
+        }
+        function remove(){
+            btn.removeEventListener("click",alertMessage)
+        }
+</script>
+<!-- Form Connection Ends -->
+
       </div>
     </div>
     </div>

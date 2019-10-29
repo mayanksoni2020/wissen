@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Project CSS File Link Starts -->
-  <link rel="stylesheet" href="index.css" type="text/css"/>
   <link rel="stylesheet" href="css2.css" type="text/css"/>
   <!-- Project CSS File Link Ends -->
 

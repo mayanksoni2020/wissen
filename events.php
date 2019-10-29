@@ -318,7 +318,15 @@ tt=display_c(window.start);
                     </div>
                 </div>
             </div>
-
+<!-- <script>
+    $(document).ready(function(){
+        $("#events-main").hover(function(){
+            $("#events-main").animate({bottom: '20px'});
+        }, function(){
+            $("#events-main").animate({top: '0px'});
+        });
+    });
+</script> -->
         </div>
 
     </div>
@@ -345,7 +353,7 @@ tt=display_c(window.start);
 <!-- partial -->
   <script>
   var app=angular.module('modalTest',['ui.bootstrap','dialogs']);
-app.controller('dialogServiceTest',function($scope,$dialogs){
+  app.controller('dialogServiceTest',function($scope,$dialogs){
   
   $scope.launch = function(which){
     var dlg = null;

@@ -5,7 +5,70 @@
                 <div class="col-md-12 col-sm-12" id="feedback-left">
                     <div class="feedback-desc">
                         <h1>Help us<br>improve<br>with your<br>suggestions</h1>
-                        <button type="button" class="btn btn-success" style="padding: 15px 25px; font-size: 18px;">Give Your Feedback</button>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" style="padding: 15px 25px; font-size: 18px;">Give Your Feedback</button>
+
+<!-- Modal Started -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #359DF7; color: white; text-align: center;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Feedback helps us to improve</h3>
+        </div>
+        <div class="modal-body" style="padding: none;">
+
+        <form action="index.php" method="post" id="feed-form">
+          <p>First Name</p>
+          <input type="text" placeholder="Enter First Name" name="firstname" required="required"/><br><br>
+          <p>Last Name</p>
+          <input type="text" placeholder="Enter Last Name" name="lastname" required="required"/><br><br>
+          <p>Email Address</p>
+          <input type="email" placeholder="Enter Email" name="email" required="required"/><br><br>
+          <p>Feedback</p>
+          <textarea type="text" placeholder="Your Words" name="feedback" required="required" style="color: black;"></textarea><br><br>
+          <!-- <button type="button" class="btn btn-warning" name="submit" style="font-size: 1.6rem; letter-spacing: 1px; color: black; width: 100%;"><b>Submit</b></button> -->
+          <input id="btn" type="submit" name="submit" value="SUBMIT" style="font-size: 1.6rem; letter-spacing: 1px; background-color: #FFAE42; font-weight: bold;"/>
+        </form>
+
+<!-- Form Connection Starts -->
+<?php
+if(isset($_POST['submit'])){
+$fname = $_POST['firstname'];
+$lname = $_POST['lastname'];
+$email = $_POST['email'];
+$feedback = $_POST['feedback'];
+
+$cn = mysqli_connect('localhost', 'root', '', 'wissen');
+
+$query = "INSERT INTO `Feedback`(`FirstName`, `LastName`, `Email`, `Feedbacks`) VALUES ('$fname', '$lname', '$email', '$feedback')";
+
+$run = mysqli_query($cn, $query);
+
+}
+?>
+<script>
+        btn.addEventListener("click",alertMessage)
+        function alertMessage(){
+            alert("Thanks for your Feedback!")
+        }
+        function remove(){
+            btn.removeEventListener("click",alertMessage)
+        }
+</script>
+<!-- Form Connection Ends -->
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: #337AB7; color: white;">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<!-- Modal Ended -->
+
                     </div>
                 </div>
             </div>
