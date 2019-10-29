@@ -3,17 +3,17 @@
             <div class="col-md-6 col-sm-6" id="footer-info">
                 <h3>WISSEN</h3>
                 <p>
-                    WISSEN is India's emerging “Home Rental Service Provider” focussed to provide a higher quality of living with the help of our designed platform.
-                    Now with iRooms it becomes unchallenging to find out a living space across Indian cities for anyone just in three simple steps - Search, Visit, Move-In. We also provide home maintenance services, so that an individual can live in healthy and friendly environment.
-                    Experience a new wave of living with iRooms, no matter what is your budget, we have something for you. Let us guide you a home.
+                    WISSEN is India's emerging “Event Organising and Web-Servises Provider” focussed to provide a higher quality of education and web products with the help of our skilled volunteers.
+                    Now with Wissen it becomes unchallenging to find out a web-services provider, as we are all time ready to build up your idea or product and lead it to the great heights. We also conducts multiple events and Hackathons in various universities so that students can showcase their skills.
+                    Experience a new wave of Services with Wissen, no matter what is your budget, we have something for you.
                 </p>
             </div>
             <div class="col-md-6 col-sm-6" id="footer-link" style="padding-left: 80px; padding-top: 20px;">
             <div class="col-md-4 col-sm-4" id="footer-links">
                 <h4>Company</h4>
-                <li>About us</li>
-                <li>Contact us</li>
-                <li>Events</li>
+                <a href="#" style="color: #888; text-decoration: none;"><li>About us</li></a>
+                <a href="contactus.php" style="color: #888; text-decoration: none;"><li>Contact us</li></a>
+                <a href="events.php" style="color: #888; text-decoration: none;"><li>Events</li></a>
                 <li>Work with us</li>
                 <li>Blog</li>
                 <li>Press</li>
@@ -55,7 +55,7 @@
             <p>
                 Having trouble ? Don't hesitate !
             </p>
-            <a href="#" class="btn" id="button-one">Ask Us</a>            
+            <a href="contactus.php" class="btn" id="button-one">Ask Us</a>            
         </div>
     </div>
 <!-- Last Footer Ends -->

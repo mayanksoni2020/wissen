@@ -14,6 +14,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 
+
 <!-- Project Javascript Starts -->
 <script type="text/javascript">
 var end = 0 // change this to stop the counter at a higher value
@@ -57,6 +58,23 @@ tt=display_c(window.start);
 
 </head>
 <body onload=display_c(97601);>
+    <!-- partial:index.partial.html -->
+<html ng-app="modalTest">
+  <head>
+    <link rel="stylesheet" href="css2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+    <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js" type="text/javascript"></script>
+    <script src="./dialogs.min.js" type="text/javascript"></script>
+  </head>
+  <body ng-controller="dialogServiceTest">
+
+    <!-- <div class="row">
+      <div class="col-md-12">
+        <button class="btn btn-danger" ng-click="launch('error')">Error Dialog</button>
+    
+      </div>
+    </div>     -->
+
     <!-- Header Starts-->
     <?php include('header.php'); ?>
     <!-- Header Ends -->
@@ -75,8 +93,8 @@ tt=display_c(window.start);
                      specifically a phone app for early detection of domestic violence for teens.
                     </p>
                     <p><b>Oct 30 - Oct 31, Lovely Professional University, Jalandhar, India</b></p>
-                    <a href="#" class="theme-btn">Know More</a>
-                    <a href="#" class="theme-btn">Register Now</a>
+                    <a href="#" class="theme-btn" ng-click="launch('hack4safety')">Know More</a>
+                    <a href="https://docs.google.com/forms/d/1-GpoSKqBXqtg3Qxd97XrcGaAb29fcnkn6SE4JkweJ9c/edit" class="theme-btn">Register Now</a>
                     <div class="go-about"></div>
                 </div>
                 <div class="col-md-6 col-sm-6">
@@ -115,9 +133,9 @@ tt=display_c(window.start);
     <div class="events-container">
         <div class="row">
             <div class="event-header">
-                <h1>Upcoming Events</h1>
+                <h1>Featured In-Person Hackathons</h1>
             </div>
-            <div class="col-md-5 col-sm-5" id="events-main">
+            <div class="col-md-5 col-sm-5" id="events-main" ng-click="launch('hack4safety')">
                 <div class="col-md-3 col-sm-3">
                     <img src="https://placeimg.com/100/200/tech" alt="image" style="width: 100%; height: 200px; margin-top: 10%;"/>
                 </div>
@@ -128,6 +146,7 @@ tt=display_c(window.start);
                     <div class="event-desc">
                         <p>Hack 4 Safety is a one-day Hackathon where the focus is on prevention of domestic violence,
                         specifically a phone app for early detection of domestic violence for teens.
+                        
                         </p>
                     </div>
                     <hr>
@@ -140,70 +159,67 @@ tt=display_c(window.start);
                 </div>
             </div>
 
-            <div class="col-md-5 col-sm-5" id="events-main">
+            <div class="col-md-5 col-sm-5" id="events-main" ng-click="launch('hack4safety')">
                 <div class="col-md-3 col-sm-3">
                     <img src="https://placeimg.com/100/200/arch" alt="image" style="width: 100%; height: 200px; margin-top: 10%;"/>
                 </div>
                 <div class="col-md-9 col-sm-9">
                     <div class="event-title">
-                        <h2>Hack 4 Safety</h2>
+                        <h2>San Diego ZooHackathon</h2>
                     </div>
                     <div class="event-desc">
-                        <p>Hack 4 Safety is a one-day Hackathon where the focus is on prevention of domestic violence,
-                        specifically a phone app for early detection of domestic violence for teens.
+                        <p>Coding to End Wildlife Trafficking. It is a two day hackathon, organised to decrease the wildlife trafficking using today's technology.
                         </p>
                     </div>
                     <hr>
                     <div class="event-more">
-                        <p style="margin-right: 25.5%;"><span><i class="fa fa-trophy"></i></span> $1,000 in prizes</p>
-                        <p><span><i class="glyphicon glyphicon-user"></i></span> 101 participants</p>
-                        <p style="margin-right: 15%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Oct 30 - Oct 31, 2019</p>
+                        <p style="margin-right: 25.5%;"><span><i class="fa fa-trophy"></i></span> $6,000 in prizes</p>
+                        <p><span><i class="glyphicon glyphicon-user"></i></span> 80 participants</p>
+                        <p style="margin-right: 15%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Nov 8 - Nov 10, 2019</p>
                         <p><span><i class="glyphicon glyphicon-map-marker"></i></span> LPU NH-1, Jalandhar</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5 col-sm-5" id="events-main">
+            <div class="col-md-5 col-sm-5" id="events-main" ng-click="launch('hack4safety')">
                 <div class="col-md-3 col-sm-3">
                     <img src="https://placeimg.com/100/200/people" alt="image" style="width: 100%; height: 200px; margin-top: 10%;"/>
                 </div>
                 <div class="col-md-9 col-sm-9">
                     <div class="event-title">
-                        <h2>Hack 4 Safety</h2>
+                        <h2>Capitol Royale Hackathon</h2>
                     </div>
                     <div class="event-desc">
-                        <p>Hack 4 Safety is a one-day Hackathon where the focus is on prevention of domestic violence,
-                        specifically a phone app for early detection of domestic violence for teens.
+                        <p>Join the legends of the last 75-years, and take your place in music history at our next Hackathon at Capitol Records.
                         </p>
                     </div>
                     <hr>
                     <div class="event-more">
-                        <p style="margin-right: 25.5%;"><span><i class="fa fa-trophy"></i></span> $1,000 in prizes</p>
-                        <p><span><i class="glyphicon glyphicon-user"></i></span> 101 participants</p>
-                        <p style="margin-right: 15%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Oct 30 - Oct 31, 2019</p>
+                        <p style="margin-right: 22.5%;"><span><i class="fa fa-trophy"></i></span> $21,500 in prizes</p>
+                        <p><span><i class="glyphicon glyphicon-user"></i></span> 53 participants</p>
+                        <p style="margin-right: 12%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Nov 15 - Nov 17, 2019</p>
                         <p><span><i class="glyphicon glyphicon-map-marker"></i></span> LPU NH-1, Jalandhar</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5 col-sm-5" id="events-main">
+            <div class="col-md-5 col-sm-5" id="events-main" ng-click="launch('hack4safety')">
                 <div class="col-md-3 col-sm-3">
                     <img src="https://placeimg.com/100/200/nature" alt="image" style="width: 100%; height: 200px; margin-top: 10%;"/>
                 </div>
                 <div class="col-md-9 col-sm-9">
                     <div class="event-title">
-                        <h2>Hack 4 Safety</h2>
+                        <h2>Abbey Road Hack-Power</h2>
                     </div>
                     <div class="event-desc">
-                        <p>Hack 4 Safety is a one-day Hackathon where the focus is on prevention of domestic violence,
-                        specifically a phone app for early detection of domestic violence for teens.
+                        <p>Spend 24 hours in the legendary recording studio playing with Facebook Spark, Unity and Spatial audio to generate multidimensional musical experiences.
                         </p>
                     </div>
                     <hr>
                     <div class="event-more">
-                        <p style="margin-right: 25.5%;"><span><i class="fa fa-trophy"></i></span> $1,000 in prizes</p>
-                        <p><span><i class="glyphicon glyphicon-user"></i></span> 101 participants</p>
-                        <p style="margin-right: 15%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Oct 30 - Oct 31, 2019</p>
+                        <p style="margin-right: 22.5%;"><span><i class="fa fa-trophy"></i></span> $11,000 in prizes</p>
+                        <p><span><i class="glyphicon glyphicon-user"></i></span> 27 participants</p>
+                        <p style="margin-right: 12%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Dec 21 - Dec 22, 2019</p>
                         <p><span><i class="glyphicon glyphicon-map-marker"></i></span> LPU NH-1, Jalandhar</p>
                     </div>
                 </div>
@@ -213,95 +229,91 @@ tt=display_c(window.start);
 <br><br>
         <div class="row">
             <div class="event-header">
-                <h1>Past Events</h1>
+                <h1>Featured Online Hackathons</h1>
             </div>
-            <div class="col-md-5 col-sm-5" id="events-main">
+            <div class="col-md-5 col-sm-5" id="events-main" ng-click="launch('hack4safety')">
                 <div class="col-md-3 col-sm-3">
                     <img src="https://placeimg.com/100/200/tech" alt="image" style="width: 100%; height: 200px; margin-top: 10%;"/>
                 </div>
                 <div class="col-md-9 col-sm-9">
                     <div class="event-title">
-                        <h2>Hack 4 Safety</h2>
+                        <h2>Kyber Virtual Hackathon</h2>
                     </div>
                     <div class="event-desc">
-                        <p>Hack 4 Safety is a one-day Hackathon where the focus is on prevention of domestic violence,
-                        specifically a phone app for early detection of domestic violence for teens.
+                        <p>Build the future of #DeFi with Kyber Network! It is a 24 hours online hackathon, you can participate from home and earn alot from it by showing your skills. 
                         </p>
                     </div>
                     <hr>
                     <div class="event-more">
-                        <p style="margin-right: 25.5%;"><span><i class="fa fa-trophy"></i></span> $1,000 in prizes</p>
-                        <p><span><i class="glyphicon glyphicon-user"></i></span> 101 participants</p>
-                        <p style="margin-right: 15%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Oct 30 - Oct 31, 2019</p>
+                        <p style="margin-right: 21.5%;"><span><i class="fa fa-trophy"></i></span> $42,500 in prizes</p>
+                        <p><span><i class="glyphicon glyphicon-user"></i></span> 300 participants</p>
+                        <p style="margin-right: 28%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Oct 30, 2019</p>
                         <p><span><i class="glyphicon glyphicon-map-marker"></i></span> LPU NH-1, Jalandhar</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5 col-sm-5" id="events-main">
+            <div class="col-md-5 col-sm-5" id="events-main" ng-click="launch('hack4safety')">
                 <div class="col-md-3 col-sm-3">
                     <img src="https://placeimg.com/100/200/arch" alt="image" style="width: 100%; height: 200px; margin-top: 10%;"/>
                 </div>
                 <div class="col-md-9 col-sm-9">
                     <div class="event-title">
-                        <h2>Hack 4 Safety</h2>
+                        <h2>Red Hat Hackathon</h2>
                     </div>
                     <div class="event-desc">
-                        <p>Hack 4 Safety is a one-day Hackathon where the focus is on prevention of domestic violence,
-                        specifically a phone app for early detection of domestic violence for teens.
+                        <p>ReBoot Customer Experience with Open Source platformand show some creativity and technical skills to the world and get perks from the Red Hat Enterprises.
                         </p>
                     </div>
                     <hr>
                     <div class="event-more">
-                        <p style="margin-right: 25.5%;"><span><i class="fa fa-trophy"></i></span> $1,000 in prizes</p>
-                        <p><span><i class="glyphicon glyphicon-user"></i></span> 101 participants</p>
-                        <p style="margin-right: 15%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Oct 30 - Oct 31, 2019</p>
+                        <p style="margin-right: 20.5%;"><span><i class="fa fa-trophy"></i></span> $30,000 in prizes</p>
+                        <p><span><i class="glyphicon glyphicon-user"></i></span> 285 participants</p>
+                        <p style="margin-right: 28%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Nov 5, 2019</p>
                         <p><span><i class="glyphicon glyphicon-map-marker"></i></span> LPU NH-1, Jalandhar</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5 col-sm-5" id="events-main">
+            <div class="col-md-5 col-sm-5" id="events-main" ng-click="launch('hack4safety')">
                 <div class="col-md-3 col-sm-3">
                     <img src="https://placeimg.com/100/200/people" alt="image" style="width: 100%; height: 200px; margin-top: 10%;"/>
                 </div>
                 <div class="col-md-9 col-sm-9">
                     <div class="event-title">
-                        <h2>Hack 4 Safety</h2>
+                        <h2>Building PermaWeb</h2>
                     </div>
                     <div class="event-desc">
-                        <p>Hack 4 Safety is a one-day Hackathon where the focus is on prevention of domestic violence,
-                        specifically a phone app for early detection of domestic violence for teens.
+                        <p>Sick of 404s? Help revolutionize the web by developing decentralized applications and get rid of such errors forever.
                         </p>
                     </div>
                     <hr>
                     <div class="event-more">
-                        <p style="margin-right: 25.5%;"><span><i class="fa fa-trophy"></i></span> $1,000 in prizes</p>
-                        <p><span><i class="glyphicon glyphicon-user"></i></span> 101 participants</p>
-                        <p style="margin-right: 15%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Oct 30 - Oct 31, 2019</p>
+                        <p style="margin-right: 24.5%;"><span><i class="fa fa-trophy"></i></span> $5,000 in prizes</p>
+                        <p><span><i class="glyphicon glyphicon-user"></i></span> 93 participants</p>
+                        <p style="margin-right: 28%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Nov 25, 2019</p>
                         <p><span><i class="glyphicon glyphicon-map-marker"></i></span> LPU NH-1, Jalandhar</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5 col-sm-5" id="events-main">
+            <div class="col-md-5 col-sm-5" id="events-main" ng-click="launch('hack4safety')">
                 <div class="col-md-3 col-sm-3">
                     <img src="https://placeimg.com/100/200/nature" alt="image" style="width: 100%; height: 200px; margin-top: 10%;"/>
                 </div>
                 <div class="col-md-9 col-sm-9">
                     <div class="event-title">
-                        <h2>Hack 4 Safety</h2>
+                        <h2>Alexa Skills Challenge</h2>
                     </div>
                     <div class="event-desc">
-                        <p>Hack 4 Safety is a one-day Hackathon where the focus is on prevention of domestic violence,
-                        specifically a phone app for early detection of domestic violence for teens.
+                        <p>Invent the future of premium voice content by developing the Alexa skills. It is an online Hackathon so you must get enrolled and check your position among all.
                         </p>
                     </div>
                     <hr>
                     <div class="event-more">
-                        <p style="margin-right: 25.5%;"><span><i class="fa fa-trophy"></i></span> $1,000 in prizes</p>
-                        <p><span><i class="glyphicon glyphicon-user"></i></span> 101 participants</p>
-                        <p style="margin-right: 15%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Oct 30 - Oct 31, 2019</p>
+                        <p style="margin-right: 20.5%;"><span><i class="fa fa-trophy"></i></span> $126,000 in prizes</p>
+                        <p><span><i class="glyphicon glyphicon-user"></i></span> 1137 participants</p>
+                        <p style="margin-right: 28%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Nov 30, 2019</p>
                         <p><span><i class="glyphicon glyphicon-map-marker"></i></span> LPU NH-1, Jalandhar</p>
                     </div>
                 </div>
@@ -311,6 +323,8 @@ tt=display_c(window.start);
 
     </div>
     <!-- All Events Ends -->
+
+    
 
     <!-- Our Sponsors Starts -->
     <div class="sponsors-container">
@@ -325,5 +339,28 @@ tt=display_c(window.start);
     <!-- Footer Starts -->
       <?php include('footer.php'); ?>
     <!-- Footer Ends -->
+    
+  </body>
+</html>
+<!-- partial -->
+  <script>
+  var app=angular.module('modalTest',['ui.bootstrap','dialogs']);
+app.controller('dialogServiceTest',function($scope,$dialogs){
+  
+  $scope.launch = function(which){
+    var dlg = null;
+    switch(which){
+        
+      // Events Dialog
+      case 'hack4safety':
+      dlg = $dialogs.error(
+        `<?php include('singleevent.php'); ?>`
+        );
+        break;
+       
+    }; // end switch
+  }; // end launch
+}) // end dialogsServiceTest
+  </script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Project CSS File Link Starts -->
-  <link rel="stylesheet" href="css3.css" type="text/css"/>
+  <link rel="stylesheet" href="css2.css" type="text/css"/>
   <!-- Project CSS File Link Ends -->
   
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -40,7 +40,7 @@
           <input type="text" placeholder="Enter Email" name="email"/><br><br>
           <p>Comment/Question</p>
           <textarea type="text" placeholder="Your Words" name="words"></textarea><br><br>
-          <button type="button" class="btn btn-warning" style="font-size: 1.6rem; letter-spacing: 1px; color: black;"><b>Submit</b></button>
+          <button type="button" class="btn btn-warning" style="font-size: 1.6rem; letter-spacing: 1px; color: black; width: 100%;"><b>Submit</b></button>
         </form>
       </div>
     </div>

@@ -432,4 +432,41 @@ header::after{
 }
 /* Our Sponsors Ends */
 
+/* Modal CSS Starts */
+.modal{ 
+	display: block;
+}
+
+/* Modal Header */
+
+.dialog-header-error{ 
+	background-color: cadetblue;
+	color: white; 
+}
+
+/* Modal Width */
+.modal-dialog{
+	width: 1250px;
+	margin: 50px auto;
+}
+#modal-left{
+	padding: 20px 40px;
+}
+#modal-right-one{
+	padding: 20px;
+	background-color: aliceblue;
+}
+#modal-right-two{
+	margin-top: 5px;
+	padding: 20px;
+	background-color: blanchedalmond;
+}
+hr{
+	border-top: 1px solid #133e54;
+}
+button{
+	display: inline;
+}
+/* Modal CSS Ends */
+
 /* Events Page CSS Ends */
