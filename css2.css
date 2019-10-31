@@ -411,7 +411,7 @@ header::after{
 /* All Events Starts */
 .events-container{
     background: linear-gradient(to top left, #2986a5,#0d6697,#00879a,#00776b);
-    height: 200vh;
+    height: auto;
     padding: 50px 80px;
     margin-top: 50px;
 }

@@ -52,5 +52,6 @@
   <!-- Footer Starts -->
     <?php include('footer.php'); ?>
   <!-- Footer Ends -->
+
 </body>
 </html>
