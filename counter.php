@@ -3,7 +3,7 @@
       <div class="col-md-12 col-sm-12" id="counter-container">
         <div class="col-md-3 col-sm-3" id="containers">
           <div class="col-md-12">
-            <img src="../Wissen/Images/award.svg" alt="Image" style="width: 100%; height: 100px;">
+            <img src="./Images/award.svg" alt="Image" style="width: 100%; height: 100px;">
           </div>
           <div class="col-md-12">
             <h1 style="color: white; display: inline-block;" class="timer count-title count-number" data-to="25" data-speed="1500"></h1>
@@ -15,10 +15,10 @@
         </div>
         <div class="col-md-3 col-sm-3" id="containers">
         <div class="col-md-12">
-            <img src="../Wissen/Images/network.svg" alt="Image" style="width: 100%; height: 100px;">
+            <img src="./Images/network.svg" alt="Image" style="width: 100%; height: 100px;">
           </div>
           <div class="col-md-12">
-            <h1 style="color: white; display: inline-block;" class="timer count-title count-number" data-to="280" data-speed="1500"></h1>
+            <h1 style="color: white; display: inline-block;" class="timer count-title count-number" data-to="2800" data-speed="1500"></h1>
             <h1 style="color: white; display: inline-block;">+</h1>
           </div>
           <div class="col-md-12">
@@ -27,7 +27,7 @@
         </div>
         <div class="col-md-3 col-sm-3" id="containers">
         <div class="col-md-12">
-            <img src="../Wissen/Images/emoji.svg" alt="Image" style="width: 100%; height: 100px;">
+            <img src="./Images/emoji.svg" alt="Image" style="width: 100%; height: 100px;">
           </div>
           <div class="col-md-12">
             <h1 style="color: white; display: inline-block;" class="timer count-title count-number" data-to="560" data-speed="1500"></h1>
@@ -39,7 +39,7 @@
         </div>
         <div class="col-md-3 col-sm-3" id="containers">
         <div class="col-md-12">
-            <img src="../Wissen/Images/stats.svg" alt="Image" style="width: 100%; height: 100px;">
+            <img src="./Images/stats.svg" alt="Image" style="width: 100%; height: 100px;">
           </div>
           <div class="col-md-12">
             <h1 style="color: white; display: inline-block;" class="timer count-title count-number" data-to="750" data-speed="1500"></h1>

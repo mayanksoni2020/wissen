@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="col-md-6 col-sm-6" id="registration-right"><br><br><br><br>
-          <img src="../../Wissen/Images/getnotified.jpg" alt="Image"/>
+          <img src="./Images/getnotified.jpg" alt="Image"/>
         </div>
       </div>
       <!-- Step One Ends-->
@@ -27,7 +27,7 @@
       <!-- Step Two Starts-->
       <div class="col-md-12 col-sm-12" id="single-container">
       <div class="col-md-6 col-sm-6" id="registration-right"><br><br><br>
-      <img src="../../Wissen/Images/reg.jpg" alt="Image"/>
+      <img src="./Images/reg.jpg" alt="Image"/>
       </div>
       <div class="col-md-6 col-sm-6" id="registration-left">
           <div class="col-md-12 col-sm-12" id="steps-name">
@@ -59,7 +59,7 @@
           </div>
         </div>
         <div class="col-md-6 col-sm-6" id="registration-right"><br><br><br>
-        <img src="../../Wissen/Images/inter.jpg" alt="Image"/>
+        <img src="./Images/inter.jpg" alt="Image"/>
         </div>
       </div>
       <!-- Step Three Ends-->
@@ -67,7 +67,7 @@
       <!-- Step Four Starts-->
       <div class="col-md-12 col-sm-12" id="single-container">
       <div class="col-md-6 col-sm-6" id="registration-right"><br><br><br><br>
-      <img src="../../Wissen/Images/result.jpg" alt="Image"/>
+      <img src="./Images/result.jpg" alt="Image"/>
       </div>
       <div class="col-md-6 col-sm-6" id="registration-left">
           <div class="col-md-12 col-sm-12" id="steps-name">

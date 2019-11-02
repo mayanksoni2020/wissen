@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="myModule" lang="en">
 <head>
 <title>Events</title>
 <meta charset="utf-8">
@@ -16,7 +16,7 @@
 
 
 <!-- Project Javascript Starts -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 var end = 0 // change this to stop the counter at a higher value
 var refresh=1000; // Refresh rate in milli seconds
 
@@ -53,20 +53,55 @@ window.start= window.start- 1;
 
 tt=display_c(window.start);
 }
+</script> -->
+
+<script type="text/javascript">
+var startDateTime = new Date(2019,10,12,9,1,0,0); // YYYY (M-1) D H m s (start time and date from DB)
+var startStamp = startDateTime.getTime();
+
+var newDate = new Date();
+var newStamp = newDate.getTime();
+
+var timer;
+
+function updateClock() {
+    newDate = new Date();
+    newStamp = newDate.getTime();
+    var diff = Math.round((startStamp-newStamp)/1000);
+    
+    var d = Math.floor(diff/(24*60*60));
+    diff = diff-(d*24*60*60);
+    var h = Math.floor(diff/(60*60));
+    diff = diff-(h*60*60);
+    var m = Math.floor(diff/(60));
+    diff = diff-(m*60);
+    var s = diff;
+    
+    //document.getElementById("time-elapsed").innerHTML = d+" day(s), "+h+" hour(s), "+m+" minute(s), "+s+" second(s) working";
+document.getElementById('time1').innerHTML=d;
+document.getElementById('time2').innerHTML=h;
+document.getElementById('time3').innerHTML=m;
+document.getElementById('time4').innerHTML=s;
+}
+
+setInterval(updateClock, 1000);
 </script>
+
 <!-- Project Javascript Ends -->
 
 </head>
-<body onload=display_c(97601);>
+<!-- <body onload=display_c(97601);> -->
+<body onload="updateClock()">
     <!-- partial:index.partial.html -->
-<html ng-app="modalTest">
+<html>
   <head>
     <link rel="stylesheet" href="css2.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
     <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js" type="text/javascript"></script>
     <script src="./dialogs.min.js" type="text/javascript"></script>
+    <script src="event.js"></script>
   </head>
-  <body ng-controller="dialogServiceTest">
+  <body>
 
     <!-- <div class="row">
       <div class="col-md-12">
@@ -81,18 +116,18 @@ tt=display_c(window.start);
 
     <!-- Events Container Starts -->
     <header>
-    <div class="container">
+    <div class="container" ng-controller="eventController">
         <div class="header-content">
             <div class="row">
                 <div class="col-md-6 col-sm-6">
-                    <div style="margin-top: 150px;"></div>
+                    <div style="margin-top: 120px;"></div>
                     <h3 style="color: white;">Presents</h3>
                     <h1 style="letter-spacing: 2px; text-decoration: underline;">HACK 4 SAFETY</h1>
                     <p style="opacity: 0.8;">
                     Hack 4 Safety is a one-day Hackathon where the focus is on prevention of domestic violence,
                      specifically a phone app for early detection of domestic violence for teens.
                     </p>
-                    <p><b>Oct 30 - Oct 31, Lovely Professional University, Jalandhar, India</b></p>
+                    <p><b>Nov 12 - Nov 13, Lovely Professional University, Jalandhar, India</b></p>
                     <a href="#" class="theme-btn" ng-click="launch('hack4safety')">Know More</a>
                     <a href="https://docs.google.com/forms/d/1-GpoSKqBXqtg3Qxd97XrcGaAb29fcnkn6SE4JkweJ9c/edit" class="theme-btn">Register Now</a>
                     <div class="go-about"></div>
@@ -130,96 +165,90 @@ tt=display_c(window.start);
     <!-- Counter Ends -->
 
     <!-- All Events Starts -->
-    <div class="events-container">
+    <div class="events-container" ng-controller="eventController">
         <div class="row">
             <div class="event-header">
                 <h1>Featured In-Person Hackathons</h1>
             </div>
-            <div class="col-md-5 col-sm-5" id="events-main" ng-click="launch('hack4safety')">
+            <div class="col-md-5 col-sm-5" id="events-main" ng-repeat="e1 in event1" ng-click="launch('hack4safety')">
                 <div class="col-md-3 col-sm-3">
                     <img src="https://placeimg.com/100/200/tech" alt="image" style="width: 100%; height: 200px; margin-top: 10%;"/>
                 </div>
                 <div class="col-md-9 col-sm-9">
                     <div class="event-title">
-                        <h2>Hack 4 Safety</h2>
+                        <h2>{{e1.eName}}</h2>
                     </div>
                     <div class="event-desc">
-                        <p>Hack 4 Safety is a one-day Hackathon where the focus is on prevention of domestic violence,
-                        specifically a phone app for early detection of domestic violence for teens.
-                        
-                        </p>
+                        <p>{{e1.eDesc}}</p>
                     </div>
                     <hr>
                     <div class="event-more">
-                        <p style="margin-right: 25.5%;"><span><i class="fa fa-trophy"></i></span> $1,000 in prizes</p>
-                        <p><span><i class="glyphicon glyphicon-user"></i></span> 101 participants</p>
-                        <p style="margin-right: 15%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Oct 30 - Oct 31, 2019</p>
+                        <p style="margin-right: 25%;"><span><i class="fa fa-trophy"></i></span> ${{e1.ePrize}} in prizes</p>
+                        <p><span><i class="glyphicon glyphicon-user"></i></span> {{e1.eParticipants}} participants</p>
+                        <p style="margin-right: 12.5%;"><span><i class="glyphicon glyphicon-calendar"></i></span> {{e1.eDate}}</p>
                         <p><span><i class="glyphicon glyphicon-map-marker"></i></span> LPU NH-1, Jalandhar</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5 col-sm-5" id="events-main" ng-click="launch('hack4safety')">
+            <div class="col-md-5 col-sm-5" id="events-main" ng-repeat="e2 in event2" ng-click="launch('sandiego')">
                 <div class="col-md-3 col-sm-3">
                     <img src="https://placeimg.com/100/200/arch" alt="image" style="width: 100%; height: 200px; margin-top: 10%;"/>
                 </div>
                 <div class="col-md-9 col-sm-9">
                     <div class="event-title">
-                        <h2>San Diego ZooHackathon</h2>
+                        <h2>{{e2.eName}}</h2>
                     </div>
                     <div class="event-desc">
-                        <p>Coding to End Wildlife Trafficking. It is a two day hackathon, organised to decrease the wildlife trafficking using today's technology.
-                        </p>
+                        <p>{{e2.eDesc}}</p>
                     </div>
                     <hr>
                     <div class="event-more">
-                        <p style="margin-right: 25.5%;"><span><i class="fa fa-trophy"></i></span> $6,000 in prizes</p>
-                        <p><span><i class="glyphicon glyphicon-user"></i></span> 80 participants</p>
-                        <p style="margin-right: 15%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Nov 8 - Nov 10, 2019</p>
+                        <p style="margin-right: 25%;"><span><i class="fa fa-trophy"></i></span> ${{e2.ePrize}} in prizes</p>
+                        <p><span><i class="glyphicon glyphicon-user"></i></span> {{e2.eParticipants}} participants</p>
+                        <p style="margin-right: 12.5%;"><span><i class="glyphicon glyphicon-calendar"></i></span> {{e2.eDate}}</p>
                         <p><span><i class="glyphicon glyphicon-map-marker"></i></span> LPU NH-1, Jalandhar</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5 col-sm-5" id="events-main" ng-click="launch('hack4safety')">
+            <div class="col-md-5 col-sm-5" id="events-main" ng-repeat="e3 in event3" ng-click="launch('capitol')">
                 <div class="col-md-3 col-sm-3">
                     <img src="https://placeimg.com/100/200/people" alt="image" style="width: 100%; height: 200px; margin-top: 10%;"/>
                 </div>
                 <div class="col-md-9 col-sm-9">
                     <div class="event-title">
-                        <h2>Capitol Royale Hackathon</h2>
+                        <h2>{{e3.eName}}</h2>
                     </div>
                     <div class="event-desc">
-                        <p>Join the legends of the last 75-years, and take your place in music history at our next Hackathon at Capitol Records.
-                        </p>
+                        <p>{{e3.eDesc}}</p>
                     </div>
                     <hr>
                     <div class="event-more">
-                        <p style="margin-right: 22.5%;"><span><i class="fa fa-trophy"></i></span> $21,500 in prizes</p>
-                        <p><span><i class="glyphicon glyphicon-user"></i></span> 53 participants</p>
-                        <p style="margin-right: 12%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Nov 15 - Nov 17, 2019</p>
+                        <p style="margin-right: 22.5%;"><span><i class="fa fa-trophy"></i></span> ${{e3.ePrize}} in prizes</p>
+                        <p><span><i class="glyphicon glyphicon-user"></i></span> {{e3.eParticipants}} participants</p>
+                        <p style="margin-right: 12%;"><span><i class="glyphicon glyphicon-calendar"></i></span> {{e3.eDate}}</p>
                         <p><span><i class="glyphicon glyphicon-map-marker"></i></span> LPU NH-1, Jalandhar</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5 col-sm-5" id="events-main" ng-click="launch('hack4safety')">
+            <div class="col-md-5 col-sm-5" id="events-main" ng-repeat="e4 in event4" ng-click="launch('abbey')">
                 <div class="col-md-3 col-sm-3">
                     <img src="https://placeimg.com/100/200/nature" alt="image" style="width: 100%; height: 200px; margin-top: 10%;"/>
                 </div>
                 <div class="col-md-9 col-sm-9">
                     <div class="event-title">
-                        <h2>Abbey Road Hack-Power</h2>
+                        <h2>{{e4.eName}}</h2>
                     </div>
                     <div class="event-desc">
-                        <p>Spend 24 hours in the legendary recording studio playing with Facebook Spark, Unity and Spatial audio to generate multidimensional musical experiences.
-                        </p>
+                        <p>{{e4.eDesc}}</p>
                     </div>
                     <hr>
                     <div class="event-more">
-                        <p style="margin-right: 22.5%;"><span><i class="fa fa-trophy"></i></span> $11,000 in prizes</p>
-                        <p><span><i class="glyphicon glyphicon-user"></i></span> 27 participants</p>
-                        <p style="margin-right: 12%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Dec 21 - Dec 22, 2019</p>
+                        <p style="margin-right: 22.5%;"><span><i class="fa fa-trophy"></i></span> ${{e4.ePrize}} in prizes</p>
+                        <p><span><i class="glyphicon glyphicon-user"></i></span> {{e4.eParticipants}} participants</p>
+                        <p style="margin-right: 12%;"><span><i class="glyphicon glyphicon-calendar"></i></span> {{e4.eDate}}</p>
                         <p><span><i class="glyphicon glyphicon-map-marker"></i></span> LPU NH-1, Jalandhar</p>
                     </div>
                 </div>
@@ -231,89 +260,86 @@ tt=display_c(window.start);
             <div class="event-header">
                 <h1>Featured Online Hackathons</h1>
             </div>
-            <div class="col-md-5 col-sm-5" id="events-main" ng-click="launch('hack4safety')">
+            <div class="col-md-5 col-sm-5" id="events-main" ng-repeat="e5 in event5" ng-click="launch('kyber')">
                 <div class="col-md-3 col-sm-3">
                     <img src="https://placeimg.com/100/200/tech" alt="image" style="width: 100%; height: 200px; margin-top: 10%;"/>
                 </div>
                 <div class="col-md-9 col-sm-9">
                     <div class="event-title">
-                        <h2>Kyber Virtual Hackathon</h2>
+                        <h2>{{e5.eName}}</h2>
                     </div>
                     <div class="event-desc">
-                        <p>Build the future of #DeFi with Kyber Network! It is a 24 hours online hackathon, you can participate from home and earn alot from it by showing your skills. 
-                        </p>
+                        <p>{{e5.eDesc}}</p>
                     </div>
                     <hr>
                     <div class="event-more">
-                        <p style="margin-right: 21.5%;"><span><i class="fa fa-trophy"></i></span> $42,500 in prizes</p>
-                        <p><span><i class="glyphicon glyphicon-user"></i></span> 300 participants</p>
-                        <p style="margin-right: 28%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Oct 30, 2019</p>
+                        <p style="margin-right: 21.5%;"><span><i class="fa fa-trophy"></i></span> ${{e5.ePrize}} in prizes</p>
+                        <p><span><i class="glyphicon glyphicon-user"></i></span> {{e5.eParticipants}} participants</p>
+                        <p style="margin-right: 28%;"><span><i class="glyphicon glyphicon-calendar"></i></span> {{e5.eDate}}</p>
                         <p><span><i class="glyphicon glyphicon-map-marker"></i></span> LPU NH-1, Jalandhar</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5 col-sm-5" id="events-main" ng-click="launch('hack4safety')">
+            <div class="col-md-5 col-sm-5" id="events-main" ng-repeat="e6 in event6" ng-click="launch('redhat')">
                 <div class="col-md-3 col-sm-3">
                     <img src="https://placeimg.com/100/200/arch" alt="image" style="width: 100%; height: 200px; margin-top: 10%;"/>
                 </div>
                 <div class="col-md-9 col-sm-9">
                     <div class="event-title">
-                        <h2>Red Hat Hackathon</h2>
+                        <h2>{{e6.eName}}</h2>
                     </div>
                     <div class="event-desc">
-                        <p>ReBoot Customer Experience with Open Source platformand show some creativity and technical skills to the world and get perks from the Red Hat Enterprises.
-                        </p>
+                        <p>{{e6.eDesc}}</p>
                     </div>
                     <hr>
                     <div class="event-more">
-                        <p style="margin-right: 20.5%;"><span><i class="fa fa-trophy"></i></span> $30,000 in prizes</p>
-                        <p><span><i class="glyphicon glyphicon-user"></i></span> 285 participants</p>
-                        <p style="margin-right: 28%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Nov 5, 2019</p>
+                        <p style="margin-right: 20.5%;"><span><i class="fa fa-trophy"></i></span> ${{e6.ePrize}} in prizes</p>
+                        <p><span><i class="glyphicon glyphicon-user"></i></span> {{e6.eParticipants}} participants</p>
+                        <p style="margin-right: 28%;"><span><i class="glyphicon glyphicon-calendar"></i></span> {{e6.eDate}}</p>
                         <p><span><i class="glyphicon glyphicon-map-marker"></i></span> LPU NH-1, Jalandhar</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5 col-sm-5" id="events-main" ng-click="launch('hack4safety')">
+            <div class="col-md-5 col-sm-5" id="events-main" ng-repeat="e7 in event7" ng-click="launch('premaweb')">
                 <div class="col-md-3 col-sm-3">
                     <img src="https://placeimg.com/100/200/people" alt="image" style="width: 100%; height: 200px; margin-top: 10%;"/>
                 </div>
                 <div class="col-md-9 col-sm-9">
                     <div class="event-title">
-                        <h2>Building PermaWeb</h2>
+                        <h2>{{e7.eName}}</h2>
                     </div>
                     <div class="event-desc">
-                        <p>Sick of 404s? Help revolutionize the web by developing decentralized applications and get rid of such errors forever.
-                        </p>
+                        <p>{{e7.eDesc}}</p>
                     </div>
                     <hr>
                     <div class="event-more">
-                        <p style="margin-right: 24.5%;"><span><i class="fa fa-trophy"></i></span> $5,000 in prizes</p>
-                        <p><span><i class="glyphicon glyphicon-user"></i></span> 93 participants</p>
-                        <p style="margin-right: 28%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Nov 25, 2019</p>
+                        <p style="margin-right: 24.5%;"><span><i class="fa fa-trophy"></i></span> ${{e7.ePrize}} in prizes</p>
+                        <p><span><i class="glyphicon glyphicon-user"></i></span> {{e7.eParticipants}} participants</p>
+                        <p style="margin-right: 28%;"><span><i class="glyphicon glyphicon-calendar"></i></span> {{e7.eDate}}</p>
                         <p><span><i class="glyphicon glyphicon-map-marker"></i></span> LPU NH-1, Jalandhar</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5 col-sm-5" id="events-main" ng-click="launch('hack4safety')">
+            <div class="col-md-5 col-sm-5" id="events-main" ng-repeat="e8 in event8" ng-click="launch('alexa')">
                 <div class="col-md-3 col-sm-3">
                     <img src="https://placeimg.com/100/200/nature" alt="image" style="width: 100%; height: 200px; margin-top: 10%;"/>
                 </div>
                 <div class="col-md-9 col-sm-9">
                     <div class="event-title">
-                        <h2>Alexa Skills Challenge</h2>
+                        <h2>{{e8.eName}}</h2>
                     </div>
                     <div class="event-desc">
-                        <p>Invent the future of premium voice content by developing the Alexa skills. It is an online Hackathon so you must get enrolled and check your position among all.
+                        <p>{{e8.eDesc}}
                         </p>
                     </div>
                     <hr>
                     <div class="event-more">
-                        <p style="margin-right: 20.5%;"><span><i class="fa fa-trophy"></i></span> $126,000 in prizes</p>
-                        <p><span><i class="glyphicon glyphicon-user"></i></span> 1137 participants</p>
-                        <p style="margin-right: 28%;"><span><i class="glyphicon glyphicon-calendar"></i></span> Nov 30, 2019</p>
+                        <p style="margin-right: 20.5%;"><span><i class="fa fa-trophy"></i></span> ${{e8.ePrize}} in prizes</p>
+                        <p><span><i class="glyphicon glyphicon-user"></i></span> {{e8.eParticipants}} participants</p>
+                        <p style="margin-right: 28%;"><span><i class="glyphicon glyphicon-calendar"></i></span> {{e8.eDate}}</p>
                         <p><span><i class="glyphicon glyphicon-map-marker"></i></span> LPU NH-1, Jalandhar</p>
                     </div>
                 </div>
@@ -351,7 +377,7 @@ tt=display_c(window.start);
   </body>
 </html>
 <!-- partial -->
-  <script>
+  <!-- <script>
   var app=angular.module('modalTest',['ui.bootstrap','dialogs']);
   app.controller('dialogServiceTest',function($scope,$dialogs){
   
@@ -362,13 +388,13 @@ tt=display_c(window.start);
       // Events Dialog
       case 'hack4safety':
       dlg = $dialogs.error(
-        `<?php include('singleevent.php'); ?>`
+        ``
         );
         break;
        
     }; // end switch
   }; // end launch
 }) // end dialogsServiceTest
-  </script>
+  </script> -->
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!-- Single Event Starts -->
 
 <div class="modal-container">
-        <div class="row">
+    <div class="row">
         <div class="col-md-8" id="modal-left">
             <img src="https://placeimg.com/750/300/tech" alt="event-image"/>
             <h2 style="color: #133E54;">Hack 4 Safety</h2>

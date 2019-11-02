@@ -26,7 +26,7 @@
 .main-container{
     height: 75vh;
     background: -webkit-gradient(linear,left top,left bottom, from(rgba(35,66,151,.6)), to(rgba(209,13,13,.692))), url('../Wissen/Images/background-cover3.jpg');
-    background: linear-gradient(180deg,rgba(35,66,151,.6),rgba(209,13,13,.692)), url('../Wissen/Images/background-cover3.jpg');
+    background: linear-gradient(180deg,rgba(35,66,151,.6),rgba(209,13,13,.692)), url('./Images/background-cover3.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: none;
@@ -269,8 +269,8 @@
 /* Contact Container Starts */
 .contact-container{
     height: 94vh;
-    background: -webkit-gradient(linear,left top,left bottom, from(rgba(35,66,151,.6)), to(rgba(209,13,13,.692))), url('../Wissen/Images/contactus1.jpg');
-    background: linear-gradient(180deg,rgba(59, 60, 61, 0.6),rgba(77, 72, 72, 0.6)), url('../Wissen/Images/contactus1.jpg');
+    background: -webkit-gradient(linear,left top,left bottom, from(rgba(35,66,151,.6)), to(rgba(209,13,13,.692))), url('./Images/contactus1.jpg');
+    background: linear-gradient(180deg,rgba(59, 60, 61, 0.6),rgba(77, 72, 72, 0.6)), url('./Images/contactus1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: none;
@@ -387,7 +387,7 @@ header::after{
     align-items: center;
     margin: 0px 10%;
     position: absolute;
-    bottom: 50px;
+    bottom: 40px;
     z-index:900;
     font-family: 'Poppins', sans-serif;
 }

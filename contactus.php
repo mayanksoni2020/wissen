@@ -42,7 +42,7 @@
           <p>Comment/Question</p>
           <textarea type="text" placeholder="Your Words" name="comments" required="required" style="color: black;"></textarea><br><br>
           <!-- <button type="button" class="btn btn-warning" name="submit" style="font-size: 1.6rem; letter-spacing: 1px; color: black; width: 100%;"><b>Submit</b></button> -->
-          <input id="btn" type="submit" name="submit" value="SUBMIT" style="font-size: 1.6rem; letter-spacing: 1px; background-color: #FFAE42; font-weight: bold;"/>
+          <input onclick="checkData" id="btn" type="submit" name="submit" value="SUBMIT" style="font-size: 1.6rem; letter-spacing: 1px; background-color: #FFAE42; font-weight: bold;"/>
         </form>
 
 <!-- Form Connection Starts -->
@@ -61,15 +61,19 @@ $run = mysqli_query($cn, $query);
 
 }
 ?>
+
 <script>
         btn.addEventListener("click",alertMessage)
         function alertMessage(){
+          if($fname && $lname && $email && $comments){
             alert("We care about you, will contact shortly")
         }
+      }
         function remove(){
             btn.removeEventListener("click",alertMessage)
         }
 </script>
+
 <!-- Form Connection Ends -->
 
       </div>
@@ -114,8 +118,14 @@ $run = mysqli_query($cn, $query);
     </div>
     <!-- Contact Ways Starts -->
 
+    <!-- Google Maps Starts -->
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27289.145862250236!2d75.70225600000002!3d31.244458000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4cc934c58d0992ec!2sLovely%20Professional%20University!5e0!3m2!1sen!2sin!4v1572702286320!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>        
+        </div>
+    <!-- // Google Maps Ends -->
+
     <!-- Footer Starts -->
-    <div style="padding-top: 50px;">
+    <div>
       <?php include('footer.php'); ?>
     </div>
     <!-- Footer Ends -->
