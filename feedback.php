@@ -2,7 +2,7 @@
     <div class="feedback-main">
         <div class="col-md-12 col-sm-12">
             <div class="col-md-6 col-sm-6">
-                <div class="col-md-12 col-sm-12" id="feedback-left">
+                <div class="col-md-12 col-sm-12 clearfix wow slideInLeft" id="feedback-left">
                     <div class="feedback-desc">
                         <h1>Help us<br>improve<br>with your<br>suggestions</h1>
                         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" style="padding: 15px 25px; font-size: 18px;">Give Your Feedback</button>
@@ -29,7 +29,7 @@
           <p>Feedback</p>
           <textarea type="text" placeholder="Your Words" name="feedback" required="required" style="color: black;"></textarea><br><br>
           <!-- <button type="button" class="btn btn-warning" name="submit" style="font-size: 1.6rem; letter-spacing: 1px; color: black; width: 100%;"><b>Submit</b></button> -->
-          <input id="btn" type="submit" name="submit" value="SUBMIT" style="font-size: 1.6rem; letter-spacing: 1px; background-color: #FFAE42; font-weight: bold;"/>
+          <input onclick="index.php" id="btn" type="submit" name="submit" value="SUBMIT" style="font-size: 1.6rem; letter-spacing: 1px; background-color: #FFAE42; font-weight: bold;"/>
         </form>
 
 <!-- Form Connection Starts -->
@@ -74,7 +74,7 @@ $run = mysqli_query($cn, $query);
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-6" id="feedback-right">
+            <div class="col-md-6 col-sm-6 clearfix wow slideInRight" id="feedback-right">
                 <div class="col-md-12 col-sm-12">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->

@@ -8,6 +8,14 @@
   <link rel="stylesheet" href="css2.css" type="text/css"/>
   <!-- Project CSS File Link Ends -->
 
+  <!--animated-css-->
+  <link href="animate.css" rel="stylesheet" type="text/css" media="all">
+  <script src="wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
+  <!--/animated-css-->
+
   <!-- Google Font Style Link Starts -->
   <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noticia+Text&display=swap" rel="stylesheet">
@@ -20,6 +28,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
 </head>
 <body>
   <!-- Header Starts-->
@@ -31,11 +44,15 @@
   <!-- Container Ends -->
 
   <!-- Our Expertise Starts -->
+  <div class="clearfix wow slideInUp">
     <?php include('expertise.php'); ?>
+  </div>
   <!-- Our Expertise Ends -->
 
   <!-- Our Services Starts -->
+  <div class="clearfix wow slideInLeft">
     <?php include('services.php'); ?>
+  </div>
   <!-- Our Services Ends -->
 
   <!-- Registration Steps Starts -->
@@ -51,7 +68,9 @@
   <!-- Feedback Ends -->
 
   <!-- Footer Starts -->
+  <div class="clearfix wow slideInUp">
     <?php include('footer.php'); ?>
+  </div>
   <!-- Footer Ends -->
 
 </body>

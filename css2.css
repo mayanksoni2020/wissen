@@ -20,6 +20,9 @@
 #myNavbar ul li :hover{
     border-bottom: 1px solid yellow;
 }
+.navbar{
+    padding: 0px;
+}
 /* <!--Navigation-Bar Ends--> */
 
 /* <!--Main Container Starts--> */
@@ -269,7 +272,7 @@
 /* Contact Container Starts */
 .contact-container{
     height: 94vh;
-    background: -webkit-gradient(linear,left top,left bottom, from(rgba(35,66,151,.6)), to(rgba(209,13,13,.692))), url('./Images/contactus1.jpg');
+    background: -webkit-gradient(linear,left top,left bottom, from(rgba(59, 60, 61, 0.6)), to(rgba(77, 72, 72, 0.6))), url('./Images/contactus1.jpg');
     background: linear-gradient(180deg,rgba(59, 60, 61, 0.6),rgba(77, 72, 72, 0.6)), url('./Images/contactus1.jpg');
     background-position: center;
     background-size: cover;

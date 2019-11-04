@@ -14,7 +14,7 @@
                 <a href="#" style="color: #888; text-decoration: none;"><li>About us</li></a>
                 <a href="contactus.php" style="color: #888; text-decoration: none;"><li>Contact us</li></a>
                 <a href="events.php" style="color: #888; text-decoration: none;"><li>Events</li></a>
-                <li>Work with us</li>
+                <a href="workwithus.php" style="color: #888; text-decoration: none;"><li>Work with us</li>
                 <li>Blog</li>
                 <li>Press</li>
             </div>
@@ -31,6 +31,7 @@
                 <li>FAQ</li>
                 <li>Privacy Policy</li>
                 <li>Achievements</li>
+                <a href="https://github.com/mayanksoni2020/wissen" style="color: #888; text-decoration: none;"><li>Github</li>
             </div>
             </div>
     </div>

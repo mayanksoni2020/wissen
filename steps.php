@@ -6,7 +6,7 @@
 
       <!-- Step One Starts-->
       <div class="col-md-12 col-sm-12" id="single-container">
-      <div class="col-md-6 col-sm-6" id="registration-left">
+      <div class="col-md-6 col-sm-6 clearfix wow slideInLeft" id="registration-left">
           <div class="col-md-12 col-sm-12" id="steps-name">
             <h1>Check Notification</h1>
           </div>
@@ -18,7 +18,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-6 col-sm-6" id="registration-right"><br><br><br><br>
+        <div class="col-md-6 col-sm-6 clearfix wow slideInRight" id="registration-right"><br><br><br><br>
           <img src="./Images/getnotified.jpg" alt="Image"/>
         </div>
       </div>
@@ -26,10 +26,10 @@
 
       <!-- Step Two Starts-->
       <div class="col-md-12 col-sm-12" id="single-container">
-      <div class="col-md-6 col-sm-6" id="registration-right"><br><br><br>
+      <div class="col-md-6 col-sm-6 clearfix wow slideInLeft" id="registration-right"><br><br><br>
       <img src="./Images/reg.jpg" alt="Image"/>
       </div>
-      <div class="col-md-6 col-sm-6" id="registration-left">
+      <div class="col-md-6 col-sm-6 clearfix wow slideInRight" id="registration-left">
           <div class="col-md-12 col-sm-12" id="steps-name">
             <h1>Fill Application Form</h1>
           </div>
@@ -46,7 +46,7 @@
 
       <!-- Step Three Starts-->
       <div class="col-md-12 col-sm-12" id="single-container">
-      <div class="col-md-6 col-sm-6" id="registration-left">
+      <div class="col-md-6 col-sm-6 clearfix wow slideInLeft" id="registration-left">
           <div class="col-md-12 col-sm-12" id="steps-name">
             <h1>Get Interviewed</h1>
           </div>
@@ -58,7 +58,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-6 col-sm-6" id="registration-right"><br><br><br>
+        <div class="col-md-6 col-sm-6 clearfix wow slideInRight" id="registration-right"><br><br><br>
         <img src="./Images/inter.jpg" alt="Image"/>
         </div>
       </div>
@@ -66,10 +66,10 @@
 
       <!-- Step Four Starts-->
       <div class="col-md-12 col-sm-12" id="single-container">
-      <div class="col-md-6 col-sm-6" id="registration-right"><br><br><br><br>
+      <div class="col-md-6 col-sm-6 clearfix wow slideInLeft" id="registration-right"><br><br><br><br>
       <img src="./Images/result.jpg" alt="Image"/>
       </div>
-      <div class="col-md-6 col-sm-6" id="registration-left">
+      <div class="col-md-6 col-sm-6 clearfix wow slideInRight" id="registration-left">
           <div class="col-md-12 col-sm-12" id="steps-name">
             <h1>Wait for Result</h1>
           </div>

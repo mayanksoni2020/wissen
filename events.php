@@ -101,6 +101,15 @@ setInterval(updateClock, 1000);
     <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.6.0.js" type="text/javascript"></script>
     <script src="./dialogs.min.js" type="text/javascript"></script>
     <script src="event.js"></script>
+
+    <!--animated-css-->
+    <link href="animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+    <!--/animated-css-->
+
   </head>
   <body>
 
@@ -120,7 +129,7 @@ setInterval(updateClock, 1000);
     <div class="container" ng-controller="eventController">
         <div class="header-content">
             <div class="row">
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-6 col-sm-6 clearfix wow zoomIn">
                     <div style="margin-top: 120px;"></div>
                     <h3 style="color: white;">Presents</h3>
                     <h1 style="letter-spacing: 2px; text-decoration: underline;">HACK 4 SAFETY</h1>
@@ -133,7 +142,7 @@ setInterval(updateClock, 1000);
                     <a href="https://docs.google.com/forms/d/1-GpoSKqBXqtg3Qxd97XrcGaAb29fcnkn6SE4JkweJ9c/edit" class="theme-btn">Register Now</a>
                     <div class="go-about"></div>
                 </div>
-                <div class="col-md-6 col-sm-6">
+                <div class="col-md-6 col-sm-6 clearfix wow zoomIn">
                     <div style="margin-top: 110px; margin-left: 100px;">
                     <img src="./Images/brain.svg" class="img-responsive" alt="image"/>
                     </div>
@@ -146,19 +155,19 @@ setInterval(updateClock, 1000);
 
     <!-- Counter Starts -->
     <div class="main_counter">
-        <div class="counter" style="background-color: rgb(38, 157, 248);">
+        <div class="counter clearfix wow slideInUp" data-wow-delay="0.4s" style="background-color: rgb(38, 157, 248);">
             <p id="time1"></p>
             <p>Days</p>
         </div>
-        <div class="counter" style="background-color: rgb(255, 157, 0);">
+        <div class="counter clearfix wow slideInUp" data-wow-delay="0.8s" style="background-color: rgb(255, 157, 0);">
             <p id="time2"></p>
             <p>Hours</p>
         </div>
-        <div class="counter" style="background-color: rgb(243, 53, 69);">
+        <div class="counter clearfix wow slideInUp" data-wow-delay="1.2s" style="background-color: rgb(243, 53, 69);">
             <p id="time3"></p>
             <p>Minutes</p>
         </div>
-        <div class="counter" style="background-color: #314DC9;">
+        <div class="counter clearfix wow slideInUp" data-wow-delay="1.6s" style="background-color: #314DC9;">
             <p id="time4"></p>
             <p>Seconds</p>
         </div>
@@ -167,7 +176,7 @@ setInterval(updateClock, 1000);
 
     <!-- All Events Starts -->
     <div class="events-container" ng-controller="eventController">
-        <div class="row">
+        <div class="row clearfix wow zoomIn">
             <div class="event-header">
                 <h1>Featured In-Person Hackathons</h1>
             </div>
@@ -257,7 +266,7 @@ setInterval(updateClock, 1000);
 
         </div>
 <br><br>
-        <div class="row">
+        <div class="row clearfix wow zoomIn">
             <div class="event-header">
                 <h1>Featured Online Hackathons</h1>
             </div>
@@ -362,7 +371,7 @@ setInterval(updateClock, 1000);
     
 
     <!-- Our Sponsors Starts -->
-    <div class="sponsors-container">
+    <div class="sponsors-container clearfix wow slideInUp">
         <div class="col-md-12 col-sm-12">
             <div class="sponsors-image">
                 <img src="https://devpost-challengepost.netdna-ssl.com/assets/home/homepage/homepage_partner_logos-8336b7efa2625741b68a4696e5f1f933.png" alt="sponsors image" style="width: 100%;"/>
@@ -372,7 +381,9 @@ setInterval(updateClock, 1000);
     <!-- Our Sponsors Ends -->
 
     <!-- Footer Starts -->
+    <div class="clearfix wow slideInUp">
       <?php include('footer.php'); ?>
+    </div>
     <!-- Footer Ends -->
     
   </body>

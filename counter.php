@@ -1,4 +1,11 @@
 <!-- Counter Starts -->
+<!-- <script>
+$(".wow").each(function() {
+  var wowHeight = $(this).height();
+  $(this).attr("data-wow-offset", wowHeight);
+});
+</script> -->
+
 <div class="counter-main">
       <div class="col-md-12 col-sm-12" id="counter-container">
         <div class="col-md-3 col-sm-3" id="containers">
@@ -53,7 +60,7 @@
     </div>
 
 <script>
-    
+
     (function ($) {
 	$.fn.countTo = function (options) {
 		options = options || {};
