@@ -5,9 +5,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Project CSS File Link Starts -->
-  <link rel="stylesheet" href="css2.css" type="text/css"/>
+  <link rel="stylesheet" href="css3.css" type="text/css"/>
   <!-- Project CSS File Link Ends -->
   
+<link rel="shortcut icon" href="https://img.icons8.com/nolan/64/000000/graduation-cap.png">  
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

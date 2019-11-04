@@ -55,7 +55,7 @@
             <p>
                 Having trouble ? Don't hesitate !
             </p>
-            <a href="contactus.php" class="btn" id="button-one">Ask Us</a>            
+            <a href="chat.php" class="btn" id="button-one">Ask Us</a>            
         </div>
     </div>
 <!-- Last Footer Ends -->
