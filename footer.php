@@ -14,8 +14,8 @@
                 <a href="#" style="color: #888; text-decoration: none;"><li>About us</li></a>
                 <a href="contactus.php" style="color: #888; text-decoration: none;"><li>Contact us</li></a>
                 <a href="events.php" style="color: #888; text-decoration: none;"><li>Events</li></a>
-                <a href="workwithus.php" style="color: #888; text-decoration: none;"><li>Work with us</li>
-                <li>Blog</li>
+                <a href="workwithus.php" style="color: #888; text-decoration: none;"><li>Work with us</li></a>
+                <a href="#" style="color: #888; text-decoration: none;"><li>Blog</li></a>
                 <li>Press</li>
             </div>
             <div class="col-md-4 col-sm-4" id="footer-links">
@@ -31,7 +31,7 @@
                 <li>FAQ</li>
                 <li>Privacy Policy</li>
                 <li>Achievements</li>
-                <a href="https://github.com/mayanksoni2020/wissen" style="color: #888; text-decoration: none;"><li>Github</li>
+                <li>Github</li>
             </div>
             </div>
     </div>
@@ -54,9 +54,9 @@
         </div>
         <div class="col-md-4 col-sm-4" id="footer-ask">
             <p>
-                Having trouble ? Don't hesitate !
+                Having trouble? Don't hesitate!
             </p>
-            <a href="chat.php" class="btn" id="button-one">Ask Us</a>            
+            <a href="contactus.php" class="btn" id="button-one">Ask Us</a>            
         </div>
     </div>
 <!-- Last Footer Ends -->

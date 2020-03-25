@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html ng-app="myModule" lang="en">
 <head>
@@ -15,49 +17,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 
-
 <!-- Project Javascript Starts -->
-<!-- <script type="text/javascript">
-var end = 0 // change this to stop the counter at a higher value
-var refresh=1000; // Refresh rate in milli seconds
-
-function display_c(start){
-window.start = parseFloat(start);
-
-if(window.start >= end ){
-mytime=setTimeout('display_ct()',refresh)
-}
-else {alert("Time Over ");}
-}
-
-function display_ct() {
-// Calculate the number of days left
-var days=Math.floor(window.start / 86400);
-
-// After deducting the days calculate the number of hours left
-var hours = Math.floor((window.start - (days * 86400 ))/3600);
-
-// After days and hours , how many minutes are left 
-var minutes = Math.floor((window.start - (days * 86400 ) - (hours *3600 ))/60);
-
-// Finally how many seconds left after removing days, hours and minutes. 
-var secs = Math.floor((window.start - (days * 86400 ) - (hours *3600 ) - (minutes*60)));
-
-var x = window.start  + "(" + days + " Days " + hours + " Hours "  + minutes + " Minutes and "  + secs + " Secondes " + ")";
-// document.getElementById('ct').innerHTML = x;
-document.getElementById('time1').innerHTML=days;
-document.getElementById('time2').innerHTML=hours;
-document.getElementById('time3').innerHTML=minutes;
-document.getElementById('time4').innerHTML=secs;
-
-window.start= window.start- 1;
-
-tt=display_c(window.start);
-}
-</script> -->
 
 <script type="text/javascript">
-var startDateTime = new Date(2019,10,12,9,1,0,0); // YYYY (M-1) D H m s (start time and date from DB)
+var startDateTime = new Date(2020,4,12,9,1,0,0); // YYYY (M-1) D H m s (start time and date from DB)
 var startStamp = startDateTime.getTime();
 
 var newDate = new Date();
@@ -113,19 +76,12 @@ setInterval(updateClock, 1000);
   </head>
   <body>
 
-    <!-- <div class="row">
-      <div class="col-md-12">
-        <button class="btn btn-danger" ng-click="launch('error')">Error Dialog</button>
-    
-      </div>
-    </div>     -->
-
     <!-- Header Starts-->
     <?php include('header.php'); ?>
     <!-- Header Ends -->
 
     <!-- Events Container Starts -->
-    <header>
+    <header style="height: 100vh;">
     <div class="container" ng-controller="eventController">
         <div class="header-content">
             <div class="row">
@@ -137,13 +93,13 @@ setInterval(updateClock, 1000);
                     Hack 4 Safety is a one-day Hackathon where the focus is on prevention of domestic violence,
                      specifically a phone app for early detection of domestic violence for teens.
                     </p>
-                    <p><b>Nov 12 - Nov 13, Lovely Professional University, Jalandhar, India</b></p>
+                    <p><b>May 12 - May 13, Lovely Professional University, Jalandhar, India</b></p>
                     <a href="#" class="theme-btn" ng-click="launch('hack4safety')">Know More</a>
-                    <a href="https://docs.google.com/forms/d/1-GpoSKqBXqtg3Qxd97XrcGaAb29fcnkn6SE4JkweJ9c/edit" class="theme-btn">Register Now</a>
+                    <a href="eventregistration.php" class="theme-btn">Register Now</a>
                     <div class="go-about"></div>
                 </div>
                 <div class="col-md-6 col-sm-6 clearfix wow zoomIn">
-                    <div style="margin-top: 110px; margin-left: 100px;">
+                    <div style="margin-top: 100px; margin-left: 100px;">
                     <img src="./Images/brain.svg" class="img-responsive" alt="image"/>
                     </div>
                 </div>
@@ -371,7 +327,7 @@ setInterval(updateClock, 1000);
     
 
     <!-- Our Sponsors Starts -->
-    <div class="sponsors-container clearfix wow slideInUp">
+    <div class="sponsors-container clearfix wow slideInLeft">
         <div class="col-md-12 col-sm-12">
             <div class="sponsors-image">
                 <img src="https://devpost-challengepost.netdna-ssl.com/assets/home/homepage/homepage_partner_logos-8336b7efa2625741b68a4696e5f1f933.png" alt="sponsors image" style="width: 100%;"/>
@@ -381,7 +337,7 @@ setInterval(updateClock, 1000);
     <!-- Our Sponsors Ends -->
 
     <!-- Footer Starts -->
-    <div class="clearfix wow slideInUp">
+    <div>
       <?php include('footer.php'); ?>
     </div>
     <!-- Footer Ends -->

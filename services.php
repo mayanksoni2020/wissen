@@ -10,7 +10,7 @@
           <h1>Leading S2S Services Provider in <small style="color: white">LPU</small>, Jalandhar</h1>
           <h4>According to Our Happy Customers</h4>
           
-          <button type="button" class="btn btn-success" style="padding: 5px 20px">Get a Check</button>
+          <a href="#"><button type="button" class="btn btn-success" style="padding: 5px 20px">Get a Check</button></a>
           </div>
         </div>
     </div>

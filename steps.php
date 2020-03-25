@@ -85,4 +85,4 @@
       <!-- Step Four Ends-->
 
     </div>
-  <!-- Registration Steps Starts -->
+  <!-- Registration Steps Ends -->

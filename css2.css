@@ -20,9 +20,6 @@
 #myNavbar ul li :hover{
     border-bottom: 1px solid yellow;
 }
-.navbar{
-    padding: 0px;
-}
 /* <!--Navigation-Bar Ends--> */
 
 /* <!--Main Container Starts--> */
@@ -272,12 +269,12 @@
 /* Contact Container Starts */
 .contact-container{
     height: 94vh;
-    background: -webkit-gradient(linear,left top,left bottom, from(rgba(59, 60, 61, 0.6)), to(rgba(77, 72, 72, 0.6))), url('./Images/contactus1.jpg');
+    background: -webkit-gradient(linear,left top,left bottom, from(rgba(35,66,151,.6)), to(rgba(209,13,13,.692))), url('./Images/contactus1.jpg');
     background: linear-gradient(180deg,rgba(59, 60, 61, 0.6),rgba(77, 72, 72, 0.6)), url('./Images/contactus1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: none;
-    margin-top: 6vh;
+    /* margin-top: 6vh; */
 }
 .contact-quote{
     border: 10px solid black;
@@ -437,6 +434,31 @@ header::after{
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(0.95);
+    position: relative;
+}
+#events-main::before{
+    content: "";
+        position: absolute;
+        bottom: -10px;
+        width: 0px;
+        height: 5px;
+        margin: 5px 0 0;
+        transition: animate;
+        transition-duration: 0.75s;
+        opacity: 0;
+        background-color: orange;
+}
+#events-main::after{
+    content: "";
+        position: absolute;
+        bottom: -10px;
+        width: 0px;
+        height: 5px;
+        margin: 5px 0 0;
+        transition: animate;
+        transition-duration: 0.75s;
+        opacity: 0;
+        background-color: orange;
 }
 .event-more p{
     display: inline-block;

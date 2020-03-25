@@ -22,7 +22,7 @@
         </div>
         <div class="col-md-4" id="modal-right">
         <div id="modal-right-one">
-            <a href="https://docs.google.com/forms/d/1-GpoSKqBXqtg3Qxd97XrcGaAb29fcnkn6SE4JkweJ9c/edit"><button type="button" class="btn btn-success" style="padding: 15px 25px; font-size: 18px; width: 100%;">Register for this Hackathon</button></a>
+            <a href="eventregistration.php"><button type="button" class="btn btn-success" style="padding: 15px 25px; font-size: 18px; width: 100%;">Register for this Hackathon</button></a>
             <br><br>
             <p style="letter-spacing: 1px;">Register to receive hackathon updates, find teammates, and submit your entry.</p>
             <hr>
